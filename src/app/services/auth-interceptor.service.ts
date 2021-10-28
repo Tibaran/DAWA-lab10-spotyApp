@@ -30,7 +30,7 @@ export class AuthInterceptorService implements HttpInterceptor {
 
   refreshToken() {
     const headers = new HttpHeaders({
-      'Authorization': 'Basic YTNjNzIwM2QyM2I1NDJmMGEzMTIyODNkMzI5MTc0Mzk6YjRjYWJiYzEwZjJiNGQwY2I3MzYzMjcxYTRiYWIwNjQ=',
+      'Authorization': 'X',
       'Content-Type': 'application/x-www-form-urlencoded'
     });
     return this.http.post(`https://accounts.spotify.com/api/token`,'grant_type=client_credentials', { headers });
